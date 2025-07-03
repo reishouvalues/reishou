@@ -1,0 +1,357 @@
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    
+    <title>診断結果｜冷笑版8values</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href='reset.css' rel='stylesheet' type='text/css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
+    <link href='style.css' rel='stylesheet' type='text/css'>
+    <script type="application/javascript" src="ideologies.js"></script>
+    <link rel="icon" type="image/png" href="favicon/icon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="favicon/icon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon/icon-192x192.png">
+    <link rel="apple-touch-icon" type="image/png" href="favicon/apple-touch-icon-180x180.png">
+</head>
+
+<script type="application/javascript" src="ideologies.js"></script>
+
+<body>
+<h1 class="top">冷笑版8values</h1>
+<hr>
+
+<h1>診断結果</h1>
+<div class="info_wrapper">
+    <div class="section-wrapper">
+        <h2>あなたにもっとも近い思想は..</h2>
+        <div class="text-wrapper">
+            <p>「<b><span id="ideology-label"></span></b>」（<span id="ideology-label_en"></span>）です。<span id="ideology-desc"></span></p>
+        </div>
+    </div>
+</div>
+
+<HR>
+<div class="section-wrapper">
+    <h3 class="results">冷笑軸：<span class="weight-300" id="economic-label"></span></h3>
+    <div class="result_wrapper">
+        <div class="bar-wrapper">
+                <img id="img-equality" src="value_images/equality.svg"/>
+                <div class="bar equality" id="bar-equality"><div class="percent_text" id="equality"></div></div>
+                <div class="bar wealth" id="bar-wealth"><div class="percent_text" id="wealth"></div></div>
+                <img id="img-wealth" src="value_images/wealth.svg"/>
+        </div>
+<!--
+        <div class="text-wrapper">	
+            <p class="result_desc_more"><span class="more"><b style="background-color:#f44336;color:#e7f3fe;">教養</b>のスコアが高い方は、。<b style="background-color:#00897b;color:#e7f3fe;">冷笑</b>のスコアが高い方は、。</span><a>説明</a></p>
+        </div>
+-->
+	</div>
+</div>
+
+<div class="section-wrapper">
+    <h3 class="results">悪意軸：<span class="weight-300" id="diplomatic-label"></span></h3>
+    <div class="result_wrapper">
+        <div class="bar-wrapper">
+            <img id="img-might" src="value_images/might.svg"/>
+            <div class="bar might" id="bar-might"><div class="percent_text" id="might"></div></div>
+            <div class="bar peace" id="bar-peace"><div class="percent_text" id="peace"></div></div>
+            <img id="img-peace" src="value_images/peace.svg"/>
+        </div>
+<!--
+        <div class="text-wrapper">
+            <p class="result_desc_more"><span class="more"><b style="background-color:#ff9800;">性悪</b>のスコアが高い方は。<b style="background-color:#03a9f4;color:#e7f3fe;">露悪</b>のスコアが高い方は、。</span><a>説明</a></p>
+        </div>
+-->
+    </div>
+</div>
+<div class="section-wrapper">
+    <h3 class="results">不本意軸：<span class="weight-300" id="state-label"></span></h3>
+    <div class="result_wrapper">
+        <div class="bar-wrapper">
+            <img id="img-liberty" src="value_images/liberty.svg"/>
+            <div class="bar liberty" id="bar-liberty"><div class="percent_text" id="liberty"></div></div>
+            <div class="bar authority" id="bar-authority"><div class="percent_text" id="authority"></div></div>
+            <img id="img-authority" src="value_images/authority.svg"/>	
+        </div>
+<!--
+        <div class="text-wrapper">
+            <p class="result_desc_more"><span class="more"><b style="background-color:#ffeb3b;">不満</b>のスコアが高い方は、<b style="background-color:#303f9f;color:#e7f3fe;">諦念</b>のスコアが高い方は、</span><a>説明</a></p>
+        </div>
+-->
+    </div>
+</div>
+<div class="section-wrapper">
+    <h3 class="results">信仰軸：<span class="weight-300" id="society-label"></span></h3>
+    <div class="result_wrapper">
+        <div class="bar-wrapper">
+            <img id="img-tradition" src="value_images/tradition.svg"/>
+            <div class="bar tradition" id="bar-tradition"><div class="percent_text" id="tradition"></div></div>
+            <div class="bar progress" id="bar-progress"><div class="percent_text" id="progress"></div></div>
+            <img id="img-progress" src="value_images/progress.svg"/>
+        </div>	
+<!--
+        <div class="text-wrapper">
+            <p class="result_desc_more"><span class="more"><b style="background-color:#8bc34a;">信仰</b>のスコアが高い方は、。<b style="background-color:#7b1fa2;color:#e7f3fe;">無神論</b>のスコアが高い方は、。</span><a>説明</a></p>
+        </div>
+-->
+    </div>
+</div>
+
+<hr>
+
+<div class="info_wrapper">
+    <div class="text-wrapper">
+<!--
+        <p>本診断の結果は、URLをコピー、または下の画像を保存することでシェアできます（スクショも大歓迎です）。</p>
+-->
+        <p>理信者（CMFB）	：	理想と信仰に生き、正義感を持つ思想家<br>
+探究者（CMFA）：知性と懐疑を持ち、真理を追い続ける人<br>
+慈観者（CMGB）：教養と信仰を胸に、静かに世界を見つめる者<br>
+静察者（CMGA）：冷静に思索し、真実を見極めようとする者<br>
+炎吐者（CRFB）：感情と思想を露わにし、社会を揺さぶる者<br>
+破理者（CRFA）：常識や理性を破壊しながら真理を求める者<br>
+哲裂者（CRGB）：教養を盾に諦めと露悪で真を抉る者<br>
+嘲幻者（CRGA）：世界を幻と見抜き、笑いながら切る者<br>
+偽火者（SMFB）：嘲りと不満を内に秘めた静かな炎<br>
+黙毒者（SMFA）：口を閉じたまま毒を抱く観察者<br>
+忍霊者（SMGB）：諦観と信仰の間に生きる、心隠す者<br>
+影冷者（SMGA）：冷笑と無神論のもとに影として生きる者<br>
+嘯烈者（SRFB）：露悪と怒りで世を煽り立てる者<br>
+逆声者（SRFA）：世界を裏返すような語りをする者<br>
+堕慧者（SRGB）：信仰と知の果てに落ちた元預言者<br>
+無嘲者（SRGA）：すべてを嘲笑いながら、虚無を生きる者  </p>
+    </div>
+
+    <div class="share">
+        <a id="btnDownload" download="8values-ja_results.png" href="">Download</a>
+        <p id="twitter-share-button"><a href="https://twitter.com/share?url='https://8values-ja.github.io'&text='すぐできる冷笑診断！あなたのインターネットをチェックしよう！'&hashtags=8values,8valuesJa">Tweet!</a></p><input id="copyTarget" type="text" value="https://8values-ja.github.io" readonly>
+        <button id="btnCopyurl" onclick="copyToClipboard()">Copy</button>
+    </div>
+
+</div>
+
+<img src="" id="banner">
+
+<HR>
+<button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">戻る</button><br>
+<script>
+    function getQueryVariable(variable)
+    {
+           var query = window.location.search.substring(1)
+           var vars = query.split("&")
+           for (var i=0;i<vars.length;i++) {
+                   var pair = vars[i].split("=")
+                   if(pair[0] == variable) {return pair[1]}
+           }
+           return(NaN);
+    }
+
+    function setBarValue(name, value) {
+        innerel = document.getElementById(name)
+        outerel = document.getElementById("bar-" + name)
+        outerel.style.width = (value + "%")
+        innerel.innerHTML = (value + "%")
+        if (value < 25) {
+            innerel.style.visibility = "hidden"
+        }
+    }
+
+    econArray = ["凍笑","嘲笑","失笑","日和見","Twitter教養","教養","真の教養"]
+    diplArray = ["陰険","性悪","性悪寄り","日和見","露悪寄り","露悪","偽悪"]
+    govtArray = ["未練","不満","不満寄り","日和見","諦念寄り","諦念","達観"]
+    sctyArray = ["敬虔","信仰","信仰寄り","日和見","無神論寄り","無神論","虚無"]
+
+function setLabel(val,ary) {
+        if (val > 100) { return "" } else
+        if (val > 90) { return ary[0] } else
+        if (val > 75) { return ary[1] } else
+        if (val > 60) { return ary[2] } else
+        if (val >= 40) { return ary[3] } else
+        if (val >= 25) { return ary[4] } else
+        if (val >= 10) { return ary[5] } else
+        if (val >= 0) { return ary[6] } else
+        	{return ""}
+    }
+
+    equality  = getQueryVariable("e")
+    peace     = getQueryVariable("d")
+    liberty   = getQueryVariable("g")
+    progress  = getQueryVariable("s")
+    wealth    = (100 - equality).toFixed(1)
+    might     = (100 - peace   ).toFixed(1)
+    authority = (100 - liberty ).toFixed(1)
+    tradition = (100 - progress).toFixed(1)
+
+    setBarValue("equality", equality)
+    setBarValue("wealth", wealth)
+    setBarValue("peace", peace)
+    setBarValue("might", might)
+    setBarValue("liberty", liberty)
+    setBarValue("authority", authority)
+    setBarValue("progress", progress)
+    setBarValue("tradition", tradition)
+
+    document.getElementById("economic-label").innerHTML = setLabel(equality, econArray)
+    document.getElementById("diplomatic-label").innerHTML = setLabel(peace, diplArray)
+    document.getElementById("state-label").innerHTML = setLabel(liberty, govtArray)
+    document.getElementById("society-label").innerHTML = setLabel(progress, sctyArray)
+
+    ideology = ""
+    ideologyori = ""	
+    ideologydesc = ""	
+    ideodist = Infinity
+    for (var i = 0; i < ideologies.length; i++) {
+        dist = 0
+        dist += Math.pow(Math.abs(ideologies[i].stats.econ - equality), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.govt - liberty), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.dipl - peace), 1.73856063)
+        dist += Math.pow(Math.abs(ideologies[i].stats.scty - progress), 1.73856063)
+        if (dist < ideodist) {
+            ideology = ideologies[i].name
+            ideologyori = ideologies[i].original
+            ideologydesc = ideologies[i].description
+            ideodist = dist
+        }
+    }
+    document.getElementById("ideology-label").innerHTML = ideology
+	document.getElementById("ideology-label_en").innerHTML = ideologyori
+	document.getElementById("ideology-description").innerHTML = ideologydesc
+
+
+//Twitter
+        const current_url = location.href;
+        const current_url_encoded = encodeURIComponent(current_url);
+        const tweetTextBefore = "わたしに一番近い冷笑タイプは「";
+        const tweetTextAfter = "」だよ！あなたは？";
+        const concatenated_str = tweetTextBefore + ideology + tweetTextAfter;
+        const con_encoded = encodeURIComponent(concatenated_str);
+        document.getElementById('twitter-share-button').innerHTML = '<a href=\"https://twitter.com/share?url=' + current_url_encoded + '&text=' + con_encoded + '&hashtags=8values,8valuesJa\">Tweet!</a>';
+
+//Copy Result URL
+    function copyResultURL(){
+        const inputTarget = document.getElementById('copyTarget');
+        inputTarget.value = current_url;  
+    }
+    copyResultURL()
+    
+    function copyToClipboard() {
+        var copyTarget = document.getElementById("copyTarget");
+        copyTarget.select();
+        document.execCommand("Copy");
+        alert("Copied result URL!");
+    }
+//Date
+  var month = new Array();
+    month= ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep","Oct", "Nov", "Dec"];
+    let today = new Date();
+    const dd = String(today.getDate()).padStart(2, '0');
+    const mm = month[today.getMonth()]; 
+    const yy = (today.getFullYear() - 2000);
+    today = mm + ' ' + dd + ', ' + '\''+yy;
+
+//CTX
+    function createImage(src, x, y, w, h) {
+        img = new Image ()
+        img.src = src
+        img.onLoad = function() {
+            ctx.drawImage(img, x, y, w, h)
+        }
+    }
+
+    window.onload = function() {
+        var c = document.createElement("canvas")
+        var ctx = c.getContext("2d")
+        c.width = 800;
+        c.height = 650;
+        ctx.fillStyle = "#EEEEEE"
+        ctx.fillRect(0,0,800,650);
+
+        img = document.getElementById("img-equality")
+        ctx.drawImage(img, 20, 170, 100, 100);
+        img = document.getElementById("img-wealth")
+        ctx.drawImage(img, 680, 170, 100, 100)
+        img = document.getElementById("img-might")
+        ctx.drawImage(img, 20, 290, 100, 100)
+        img = document.getElementById("img-peace")
+        ctx.drawImage(img, 680, 290, 100, 100)
+        img = document.getElementById("img-liberty")
+        ctx.drawImage(img, 20, 410, 100, 100)
+        img = document.getElementById("img-authority")
+        ctx.drawImage(img, 680, 410, 100, 100)
+        img = document.getElementById("img-tradition")
+        ctx.drawImage(img, 20, 530, 100, 100)
+        img = document.getElementById("img-progress")
+        ctx.drawImage(img, 680, 530, 100, 100)
+
+        ctx.fillStyle="#222222"
+        ctx.fillRect(120, 180, 560, 80)
+        ctx.fillRect(120, 300, 560, 80)
+        ctx.fillRect(120, 420, 560, 80)
+        ctx.fillRect(120, 540, 560, 80)
+        ctx.fillStyle="#f44336"
+        ctx.fillRect(120, 184, 5.6*equality-2, 72)
+        ctx.fillStyle="#00897b"
+        ctx.fillRect(682-5.6*wealth, 184, 5.6*wealth-2, 72)
+        ctx.fillStyle="#ff9800"
+        ctx.fillRect(120, 304, 5.6*might-2, 72)
+        ctx.fillStyle="#03a9f4"
+        ctx.fillRect(682-5.6*peace, 304, 5.6*peace-2, 72)
+        ctx.fillStyle="#ffeb3b"
+        ctx.fillRect(120, 424, 5.6*liberty-2, 72)
+        ctx.fillStyle="#3f51b5"
+        ctx.fillRect(682-5.6*authority, 424, 5.6*authority-2, 72)
+        ctx.fillStyle="#8bc34a"
+        ctx.fillRect(120, 544, 5.6*tradition-2, 72)
+        ctx.fillStyle="#9c27b0"
+        ctx.fillRect(682-5.6*progress, 544, 5.6*progress-2, 72)
+        ctx.fillStyle="#222222"
+        ctx.font="700 55px 'Noto Sans JP'"
+        ctx.textAlign="left"
+        ctx.fillText("冷笑版8values", 20, 90)
+        ctx.font="45px 'Noto Sans JP'"
+        ctx.fillText(ideology, 20, 140)
+
+        ctx.textAlign="left"
+        if (equality  > 30) {ctx.fillText(equality + "%", 130, 237.5)}
+        if (might     > 30) {ctx.fillText(might + "%", 130, 357.5)}
+        if (liberty   > 30) {ctx.fillText(liberty + "%", 130, 477.5)}
+        if (tradition > 30) {ctx.fillText(tradition + "%", 130, 597.5)}
+        ctx.textAlign="right"
+        if (wealth    > 30) {ctx.fillText(wealth + "%", 670, 237.5)}
+        if (peace     > 30) {ctx.fillText(peace + "%", 670, 357.5)}
+        if (authority > 30) {ctx.fillText(authority + "%", 670, 477.5)}
+        if (progress  > 30) {ctx.fillText(progress + "%", 670, 597.5)}
+
+        ctx.font="300 30px 'Noto Sans JP'"
+        ctx.fillText("8values-ja.github.io", 780, 60)
+		ctx.fillText(today, 780, 90)
+        ctx.textAlign="center"
+        ctx.fillText("「冷笑」: " + document.getElementById("economic-label").innerHTML, 400, 175)
+        ctx.fillText("「悪意」: " + document.getElementById("diplomatic-label").innerHTML, 400, 295)
+        ctx.fillText("「不本意」: " + document.getElementById("state-label").innerHTML, 400, 415)
+        ctx.fillText("「信仰」: " + document.getElementById("society-label").innerHTML, 400, 535)
+
+        document.getElementById("banner").src = c.toDataURL();
+        
+        document.getElementById("btnDownload").addEventListener('click', function(){
+            this.href = c.toDataURL();
+        }); 
+    }
+    </script>
+	
+<script>
+	document.querySelectorAll(".result_desc_more").forEach(function (p) {
+		p.querySelector("a").addEventListener("click", function myFunction() {
+	    		p.classList.toggle("show");
+	    		this.textContent = p.classList.contains("show") ? "隠す" : "説明";
+  		});
+	});
+</script>
+
+</body>
