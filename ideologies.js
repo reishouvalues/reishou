@@ -4,9 +4,9 @@ ideologies = [
         "original": "CMFB",
         "stats": {
             "econ": 100,
-            "dipl": 100,
+            "dipl": 0,
             "govt": 100,
-            "scty": 100
+            "scty": 0
         }
     },
     {
@@ -14,9 +14,9 @@ ideologies = [
 	"original": "CMFA",
         "stats": {
             "econ": 100,
-            "dipl": 100,
+            "dipl": 0,
             "govt": 100,
-            "scty": 0
+            "scty": 100
         }
     },
     {
@@ -24,9 +24,9 @@ ideologies = [
         "original": "CMGB",
         "stats": {
             "econ": 100,
-            "dipl": 100,
+            "dipl": 0,
             "govt": 0,
-            "scty": 100
+            "scty": 0
         }
     },
     {
@@ -35,9 +35,9 @@ ideologies = [
 	"description": "",
         "stats": {
             "econ": 100,
-            "dipl": 100,
+            "dipl": 0,
             "govt": 0,
-            "scty": 0
+            "scty": 100
         }
     },
     {
@@ -45,9 +45,9 @@ ideologies = [
         "original": "CRFB",
         "stats": {
             "econ": 100,
-            "dipl": 0,
+            "dipl": 100,
             "govt": 100,
-            "scty": 100
+            "scty": 0
         }
     },
     {
@@ -55,9 +55,9 @@ ideologies = [
         "original": "CRFA",
         "stats": {
             "econ": 100,
-            "dipl": 0,
+            "dipl": 100,
             "govt": 100,
-            "scty": 0
+            "scty": 100
         }
     },
     {
@@ -65,9 +65,9 @@ ideologies = [
         "original": "CRGB",
         "stats": {
             "econ": 100,
-            "dipl": 0,
+            "dipl": 100,
             "govt": 0,
-            "scty": 100
+            "scty": 0
         }
     },
     {
@@ -75,9 +75,9 @@ ideologies = [
 	"original": "CRGA",
         "stats": {
             "econ": 100,
-            "dipl": 0,
+            "dipl": 100,
             "govt": 0,
-            "scty": 0
+            "scty": 100
         }
     },
     {
@@ -86,9 +86,9 @@ ideologies = [
 	"description": "嘲りと不満を内に秘めた静かな炎。",
         "stats": {
             "econ": 0,
-            "dipl": 100,
+            "dipl": 0,
             "govt": 100,
-            "scty": 100
+            "scty": 0
         }
     },
     {
@@ -96,9 +96,9 @@ ideologies = [
         "original": "SMFA",
         "stats": {
             "econ": 0,
-            "dipl": 100,
+            "dipl": 0,
             "govt": 100,
-            "scty": 0
+            "scty": 100
         }
     },
     {    
@@ -106,9 +106,9 @@ ideologies = [
         "original": "SMGB",
         "stats": {
             "econ": 0,
-            "dipl": 100,
+            "dipl": 0,
             "govt": 0,
-            "scty": 100
+            "scty": 0
         }
     },
     {    
@@ -116,9 +116,9 @@ ideologies = [
         "original": "SMGA",
         "stats": {
             "econ": 0,
-            "dipl": 100,
+            "dipl": 0,
             "govt": 0,
-            "scty": 0
+            "scty": 100
         }
     },
     {   
@@ -126,9 +126,9 @@ ideologies = [
         "original": "SRFB",
         "stats": {
             "econ": 0,
-            "dipl": 0,
+            "dipl": 100,
             "govt": 100,
-            "scty": 100
+            "scty": 0
         }
     },
     {   
@@ -136,9 +136,9 @@ ideologies = [
         "original": "SRFA",
         "stats": {
             "econ": 0,
-            "dipl": 0,
+            "dipl": 100,
             "govt": 100,
-            "scty": 0
+            "scty": 100
         }
     },
     {   
@@ -146,9 +146,9 @@ ideologies = [
         "original": "SRGB",
         "stats": {
             "econ": 0,
-            "dipl": 0,
-            "govt": 00,
-            "scty": 100
+            "dipl": 100,
+            "govt": 0,
+            "scty": 0
         }
     },
     {   
@@ -156,9 +156,9 @@ ideologies = [
         "original": "SRGA",
         "stats": {
             "econ": 0,
-            "dipl": 0,
+            "dipl": 100,
             "govt": 0,
-            "scty": 0
+            "scty": 100
         }
     }
 ];
